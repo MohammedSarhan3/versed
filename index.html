@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Versed Fitness Pre-Coaching Application Form - Start your fitness journey today">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="./assets/images/img1.WEBP">
+    <link rel="preload" as="image" href="./assets/images/img2.WEBP">
+    <link rel="preload" as="image" href="./assets/images/logov.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="image-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Life</h1>
+            <p class="hero-subtitle">Begin Your Fitness Journey Today</p>
+        </div>
+        <img src="./assets/images/img1.WEBP" alt="Fitness Transformation" class="hero-image" loading="eager">
+    </div>
+    <div class="container">
+        <img src="./assets/images/logov.png" alt="Versed Fitness Logo" class="logo" loading="lazy">
+        <h1>Start Your Fitness Journey</h1>
+        
+       
+
+        <form id="coachingForm" onsubmit="return handleSubmit(event)" novalidate>
+            <div class="name-fields">
+                <div class="form-group" data-aos="fade-up">
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required 
+                           placeholder="Enter your first name">
+                </div>
+
+                <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required
+                           placeholder="Enter your last name">
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="150">
+                <label for="reason">What is your reason for reaching out to me for help? Why now?*</label>
+                <textarea id="reason" name="reason" required
+                          placeholder="Share your motivation for starting this journey..."></textarea>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <label for="goals">What do you want to achieve in the next 3+ months?*</label>
+                <textarea id="goals" name="goals" required
+                          placeholder="Describe your fitness and health goals..."></textarea>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="250">
+                <label for="obstacles">What's holding you back from achieving your goals?*</label>
+                <textarea id="obstacles" name="obstacles" required
+                          placeholder="Tell us about your challenges..."></textarea>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <label for="previousAttempts">What have you previously tried?*</label>
+                <textarea id="previousAttempts" name="previousAttempts" required
+                          placeholder="e.g., keto diet, running, gym..."></textarea>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="350">
+                <label>How important is starting this journey?*</label>
+                <div class="star-rating-container">
+                    <div class="star-rating">
+                        <input type="radio" name="rating" value="1" id="star1">
+                        <label for="star1">
+                            <svg class="star-icon" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </label>
+
+                        <input type="radio" name="rating" value="2" id="star2">
+                        <label for="star2">
+                            <svg class="star-icon" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </label>
+                        <input type="radio" name="rating" value="3" id="star3">
+                        <label for="star3">
+                            <svg class="star-icon" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </label>
+
+
+                        <input type="radio" name="rating" value="4" id="star4">
+                        <label for="star4">
+                            <svg class="star-icon" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </label>
+                        
+
+                        <input type="radio" name="rating" value="5" id="star5">
+                        <label for="star5">
+                            <svg class="star-icon" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </label>
+                       
+                      
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                <label>Monthly Investment Range*</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="100-200" name="investment" value="100-200" required>
+                        <label for="100-200">$100-$200</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="200-300" name="investment" value="200-300">
+                        <label for="200-300">$200-$300</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="300-400" name="investment" value="300-400">
+                        <label for="300-400">$300-$400</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="400plus" name="investment" value="400+">
+                        <label for="400plus">$400+</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="450">
+                <label>How did you hear about Versed Fitness?*</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="social" name="source" value="social" required>
+                        <label for="social">Social Media</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="referral" name="source" value="referral">
+                        <label for="referral">Friend/Family Referral</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="search" name="source" value="search">
+                        <label for="search">Search Engine</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="other" name="source" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+                <label>Are you ready to get started?*</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="yes" name="ready" value="yes" required>
+                        <label for="yes">Yes, I'm ready to transform!</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="maybe" name="ready" value="maybe">
+                        <label for="maybe">I need more information</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="no" name="ready" value="no">
+                        <label for="no">Not at this time</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section" data-aos="fade-up" data-aos-delay="550">
+                <h2>Ready to Transform Your Life?</h2>
+                <button type="submit" class="submit-btn">
+                    <span>Submit Application</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+ 
+
+    <div class="testimonial-section">
+        <img src="./assets/images/img2.jpg" alt="Success Story" class="testimonial-image">
+        <div class="testimonial-content">
+            <i class="fas fa-quote-left"></i>
+            <h2>Transform Your Life</h2>
+            <p>Join hundreds of successful transformations and start your journey today!</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-medal"></i>
+                    <span>500+</span>
+                    <p>Success Stories</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5</span>
+                    <p>Client Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>10+ Years</span>
+                    <p>Experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
